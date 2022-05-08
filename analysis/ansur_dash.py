@@ -48,6 +48,104 @@ races = (["All", "White", "Black", "Hispanic", "Asian", "Native American", "Paci
 heights = ["All"]
 heights.extend([str(55+i)+"-"+str(55+i+1) for i in range(35)])
 
+# Body Measurements - For Proportionality Constants
+body_measurements = ['abdominalextensiondepthsitting',
+    'acromialheight',
+    'acromionradialelength',
+    'anklecircumference',
+    'axillaheight',
+    'balloffootcircumference',
+    'balloffootlength',
+    'biacromialbreadth',
+    'bicepscircumferenceflexed',
+    'bicristalbreadth',
+    'bideltoidbreadth',
+    'bimalleolarbreadth',
+    'bitragionchinarc',
+    'bitragionsubmandibulararc',
+    'bizygomaticbreadth',
+    'buttockcircumference',
+    'buttockdepth',
+    'buttockheight',
+    'buttockkneelength',
+    'buttockpopliteallength',
+    'calfcircumference',
+    'cervicaleheight',
+    'chestbreadth',
+    'chestcircumference',
+    'chestdepth',
+    'chestheight',
+    'crotchheight',
+    'crotchlengthomphalion',
+    'crotchlengthposterioromphalion',
+    'earbreadth',
+    'earlength',
+    'earprotrusion',
+    'elbowrestheight',
+    'eyeheightsitting',
+    'footbreadthhorizontal',
+    'footlength',
+    'forearmcenterofgriplength',
+    'forearmcircumferenceflexed',
+    'forearmforearmbreadth',
+    'forearmhandlength',
+    'functionalleglength',
+    'handbreadth',
+    'handcircumference',
+    'handlength',
+    'headbreadth',
+    'headcircumference',
+    'headlength',
+    'heelanklecircumference',
+    'heelbreadth',
+    'hipbreadth',
+    'hipbreadthsitting',
+    'iliocristaleheight',
+    'interpupillarybreadth',
+    'interscyei',
+    'interscyeii',
+    'kneeheightmidpatella',
+    'kneeheightsitting',
+    'lateralfemoralepicondyleheight',
+    'lateralmalleolusheight',
+    'lowerthighcircumference',
+    'mentonsellionlength',
+    'neckcircumference',
+    'neckcircumferencebase',
+    'overheadfingertipreachsitting',
+    'palmlength',
+    'poplitealheight',
+    'radialestylionlength',
+    'shouldercircumference',
+    'shoulderelbowlength',
+    'shoulderlength',
+    'sittingheight',
+    'sleevelengthspinewrist',
+    'sleeveoutseam',
+    'span',
+    'suprasternaleheight',
+    'tenthribheight',
+    'thighcircumference',
+    'thighclearance',
+    'thumbtipreach',
+    'tibialheight',
+    'tragiontopofhead',
+    'trochanterionheight',
+    'verticaltrunkcircumferenceusa',
+    'waistbacklength',
+    'waistbreadth',
+    'waistcircumference',
+    'waistdepth',
+    'waistfrontlengthsitting',
+    'waistheightomphalion',
+    'wristcircumference',
+    'wristheight']
+
+# Compute Constants
+for col in df.columns:
+    if col in body_measurements:
+        df[col+"_pconstant"] = df[col]/df["stature"]
+            
 # Summary Stats Functions
 def percentiles_df(df, measure):
     # measure - the measurement or column in the dataframe
@@ -118,7 +216,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     
     # Title
     html.H1(
-        children='ANSUR II - Data Exploration',
+        children='ANSUR II - Data Exploration & Body Proportions',
         style={
             'textAlign': 'center',
             'color': colors['text']
@@ -129,6 +227,11 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     html.Div(children='This app allows you to look at the distribution of the variables in the ansur II dataset.', style={
         'textAlign': 'center',
         'color': colors['text']
+    }),
+    
+    html.A("Link to ANSUR II: Methods and Summary Statistics", href='http://tools.openlab.psu.edu/publicData/ANSURII-TR15-007.pdf', target="_blank", 
+    style={
+        'textAlign': 'center'
     }),
 
     # Drop Down
