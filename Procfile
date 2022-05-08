@@ -1,1 +1,1 @@
-web: gunicorn ansur_dash.py:server
+web: gunicorn ansur_dash:server
