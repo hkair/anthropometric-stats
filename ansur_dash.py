@@ -20,8 +20,8 @@ import seaborn as sns
 pd.set_option('display.max_columns', None)
 
 ## PATHS
-ansur_male_path = "../data/ansur/ANSUR II MALE Public.csv"
-ansur_female_path = "../data/ansur/ANSUR II FEMALE Public.csv"
+ansur_male_path = "./data/ansur/ANSUR II MALE Public.csv"
+ansur_female_path = "./data/ansur/ANSUR II FEMALE Public.csv"
 
 ## Dataframe
 ansur_male = pd.read_csv(ansur_male_path, encoding = 'cp1252')
@@ -206,6 +206,7 @@ def frequency_table(df, measure):
     
 # APP
 app = Dash(__name__)
+server = app.server
 
 colors = {
     'background': '#CAD7DA',
