@@ -1,0 +1,932 @@
+abdominalextensiondepthsitting
+(1) ABDOMINAL EXTENSION DEPTH, SITTING 
+The horizontal distance between the abdominal point anterior and the back at the same 
+level is measured with a beam caliper. The participant sits erect, looking straight ahead. 
+The measurement is taken at the maximum point of quiet respiration. 
+ 
+
+acromialheight
+(2) ACROMIAL HEIGHT 
+The vertical distance between a standing surface and the right acromion landmark is 
+measured with an anthropometer. The participant stands erect, looking straight ahead. 
+The heels are together with the weight distributed equally on both feet. The shoulders 
+and upper extremities are relaxed. The measurement is taken at the maximum point of 
+quiet respiration.  
+
+acromionradialelength
+(3) ACROMION-RADIALE LENGTH 
+The distance between the right acromion landmark and the radiale landmark is 
+measured with a beam caliper held parallel to the long axis of the arm. The participant 
+stands erect. The shoulders and upper extremities are relaxed with the palms facing the 
+thighs. 
+
+anklecircumference
+(4) ANKLE CIRCUMFERENCE 
+The minimum horizontal circumference of the right ankle is measured with a tape. The 
+participant stands with the feet about 10 cm apart and the weight distributed equally on 
+both feet. 
+
+axillaheight
+(5) AXILLA HEIGHT 
+The vertical distance between a standing surface and the anterior-scye-on-the-torso 
+landmark is measured with an anthropometer. The participant stands erect, looking 
+straight ahead. The heels are together with the weight distributed equally on both feet. 
+The shoulders and upper extremities are relaxed with the palms facing the thighs. The 
+measurement is taken at the maximum point of quiet respiration. 
+
+balloffootcircumference
+ (6) BALL OF FOOT CIRCUMFERENCE 
+The circumference of the foot at the first and fifth metatarsophalangeal landmarks is 
+measured with a tape. The participant stands with the feet about 10 cm apart and the 
+weight distributed equally on both feet. 
+
+balloffootlength
+(7) BALL OF FOOT LENGTH 
+The distance from the back of the heel to the landmark at the first metatarsophalangeal 
+protrusion is measured with the Brannock Device®. The participant stands erect with the 
+right foot in the Brannock Device® and the other foot on a board of equal height.  The 
+weight is distributed equally on both feet. The medial side of the right foot is parallel with 
+the long axis of the device. 
+
+biacromialbreadth
+(8) BIACROMIAL BREADTH 
+The distance between the right and left acromion landmarks is measured with a beam 
+caliper. The participant sits erect. The shoulders and upper arms are relaxed, and the 
+forearms and hands are extended forward horizontally with the palms facing each other. 
+The measurement is taken at the maximum point of quiet respiration. 
+
+bicepscircumferenceflexed
+(9) BICEPS CIRCUMFERENCE, FLEXED 
+The circumference of the right upper arm around the flexed biceps brachii muscle at the 
+biceps point landmark is measured with a tape held perpendicular to the long axis of the 
+upper arm. The participant stands with the upper arm extended horizontally and the 
+elbow flexed 90°. The fist is clenched and held facing the head, and the participant 
+exerts maximum effort in contracting the biceps brachii muscle. 
+
+bicristalbreadth
+(10) BICRISTAL BREADTH 
+The straight-line distance between the right and left iliocristale landmarks is measured 
+with a beam caliper. The participant stands erect, looking straight ahead. The tissue is 
+firmly compressed to ensure the measurement is taken on the bony landmarks.   
+ 
+
+bideltoidbreadth
+(11) BIDELTOID BREADTH 
+The maximum horizontal distance between the lateral margins of the upper arms on the 
+deltoid muscles is measured with a beam caliper. The participant sits erect, looking 
+straight ahead. The shoulders and upper arms are relaxed, and the forearms and hands 
+are extended forward horizontally with the palms facing each other. The measurement 
+is taken at the maximum point of quiet respiration. 
+
+bimalleolarbreadth
+(12) BIMALLEOLAR BREADTH 
+The horizontal distance between the maximum protrusions of the ankle bones (lateral 
+and medial malleoli) of the right foot is measured with a Holtain caliper. The participant 
+stands with the weight equally distributed on both feet. 
+
+bitragionchinarc
+(13) BITRAGION CHIN ARC 
+The surface distance between the right and left tragion landmarks across the chin 
+landmark is measured with a tape. The teeth are lightly occluded. 
+
+bitragionsubmandibulararc
+(14) BITRAGION SUBMANDIBULAR ARC 
+The surface distance between the right and left tragion landmarks across the 
+submandibular landmark is measured with a tape. The head is in the Frankfurt plane, 
+and the teeth are lightly occluded. 
+
+bizygomaticbreadth
+(15) BIZYGOMATIC BREADTH 
+The maximum horizontal breadth of the face (between the zygomatic arches) at the left 
+and right zygion landmarks is measured with a spreading caliper. 
+
+buttockcircumference
+(16) BUTTOCK CIRCUMFERENCE 
+The horizontal circumference of the trunk at the level of the buttock point, posterior, right 
+and left lateral landmarks, is measured with a tape. The participant stands erect with the 
+heels together and the weight equally distributed on both feet. 
+
+buttockdepth
+(17) BUTTOCK DEPTH 
+The horizontal depth of the torso at the level of the buttock point, posterior and right 
+lateral landmarks, is measured using a beam caliper. The participant stands erect with 
+the heels together and the weight distributed equally on both feet. 
+
+buttockheight
+(18) BUTTOCK HEIGHT 
+The vertical distance between a standing surface and the level of the buttock point, right 
+lateral landmark, is measured with an anthropometer at the right side of the thigh. The 
+participant stands erect with the heels together and the weight distributed equally on 
+both feet. 
+
+buttockkneelength
+(19) BUTTOCK-KNEE LENGTH 
+The horizontal distance between a buttock plate placed at the most posterior point on 
+either buttock and the knee point, anterior landmark, is measured with an 
+anthropometer. The participant sits erect. The thighs are parallel and the knees flexed 
+90° with the feet in line with the thighs. 
+
+buttockpopliteallength
+(20) BUTTOCK-POPLITEAL LENGTH 
+The horizontal distance between a buttock plate placed at the most posterior point on 
+either buttock and the back of the right knee (the popliteal fossa at the dorsal juncture of 
+the calf and thigh) is measured with an anthropometer. The participant sits erect. The 
+thighs are parallel and the knees flexed 90° with the feet in line with the thighs. 
+ 
+
+calfcircumference
+(21) CALF CIRCUMFERENCE 
+The maximum horizontal circumference of the right calf is measured with a tape. The 
+participant stands erect with the heels approximately 10 cm apart and the weight 
+distributed equally on both feet. 
+
+cervicaleheight
+(22) CERVICALE HEIGHT* 
+The vertical distance between a standing surface and the cervicale landmark is 
+measured with an anthropometer. The participant stands erect with the head in the 
+Frankfurt plane. The heels are together with the weight distributed equally on both feet. 
+The shoulders and upper extremities are relaxed. The measurement is taken at the 
+maximum point of quiet respiration 
+
+chestbreadth
+(23) CHEST BREADTH* 
+The maximum horizontal breadth of the chest at the level of the chest point anterior 
+landmark is measured with a beam caliper. The participant stands erect, looking straight 
+ahead with the heels together and the weight distributed evenly on both feet. The 
+participant places both hands on the hips and takes a deep breath and holds it. The 
+tissue is compressed with the beam caliper, and then the participant lowers the arms.  
+The measurement is taken at maximum inspiration. 
+
+chestcircumference
+(24) CHEST CIRCUMFERENCE* 
+The maximum horizontal circumference of the chest at the level of chest point, anterior 
+is measured with a tape. The participant stands erect, looking straight ahead. The 
+shoulders and upper extremities are relaxed. The measurement is taken at the 
+maximum point of quiet respiration. 
+
+
+ 
+(25) CHEST DEPTH* 
+The horizontal distance between the chest point anterior landmark and the back at the 
+same level is measured with a beam caliper. The participant stands erect, looking 
+straight ahead. The shoulders and upper extremities are relaxed. The measurement is 
+taken at the maximum point of quiet respiration. 
+
+chestheight
+(26) CHEST HEIGHT* 
+The vertical distance between a standing surface and the chest point anterior landmark 
+is measured with an anthropometer. The participant stands erect, looking straight 
+ahead. The heels are together with the weight distributed equally on both feet. The 
+shoulders and upper extremities are relaxed. The measurement is taken at the 
+maximum point of quiet respiration. 
+
+crotchheight
+(27) CROTCH HEIGHT 
+The vertical distance between the standing surface and the crotch is measured with an 
+anthropometer. The participant stands erect, looking straight ahead. The heels are 
+together, and the weight is distributed equally on both feet. 
+
+crotchlengthomphalion
+(28) CROTCH LENGTH (OMPHALION) 
+The distance between the abdomen at the level of the omphalion landmark to the same 
+level on the back is measured with a tape passing through the crotch to the right of the 
+genitalia. The tape is held vertically both in front and in back. The participant stands 
+erect, looking straight ahead. The heels are together with the weight distributed equally 
+on both feet. The measurement is taken at the maximum point of quiet respiration. 
+
+crotchlengthposterioromphalion
+(29) CROTCH LENGTH, POSTERIOR (OMPHALION) 
+The surface distance from the crotch at the inner thigh landmark to the omphalion 
+posterior landmark is measured with a tape. The tape passes between the buttocks to 
+the back of the waist. The participant stands with the left foot on a platform so that the 
+knee is flexed. 
+
+earbreadth
+(30) EAR BREADTH 
+The maximum breadth of the right ear perpendicular to its long axis is measured with a 
+sliding caliper. 
+
+earlength
+(31) EAR LENGTH 
+The length of the right ear, from its highest to lowest points on a line parallel to the long 
+axis of the ear, is measured with a sliding caliper. 
+
+earprotrusion
+(32) EAR PROTRUSION 
+The horizontal distance between the mastoid process and the outside edge of the right 
+ear at its most lateral point is measured using a sliding caliper with its slide reversed. 
+
+elbowrestheight
+(33) ELBOW REST HEIGHT 
+The vertical distance between a sitting surface and the olecranon, bottom landmark on 
+the flexed right elbow, is measured with an anthropometer. The participant sits erect, 
+looking straight ahead. The shoulders and upper arms are relaxed, and the forearms 
+and hands are extended forward horizontally with the palms facing each other. The 
+measurement is taken at the maximum point of quiet respiration. 
+
+eyeheightsitting
+(34) EYE HEIGHT, SITTING 
+The vertical distance between a sitting surface and the ectocanthus landmark is 
+measured with an anthropometer. The participant sits erect with the head in the 
+Frankfurt plane. The shoulders and upper arms are relaxed, and the forearms and 
+hands are extended forward horizontally with the palms facing each other. The thighs 
+are parallel, and the knees are flexed 90° with the feet in line with the thighs. The 
+measurement is taken at the maximum point of quiet respiration. 
+
+footbreadthhorizontal
+(35) FOOT BREADTH, HORIZONTAL 
+The maximum breadth of the right foot is measured with a Brannock Device®. The 
+participant stands with the right foot on the device and the left foot on a board of equal 
+height with the weight distributed equally on both feet. The heel of the right foot lightly 
+touches the back of the device, and the medial side of the right foot is parallel with the 
+long axis of the device. The vertical slide of the device is moved until it lightly touches 
+the fifth metatarsophalangeal protrusion landmark. 
+
+footlength
+(36) FOOT LENGTH 
+The maximum length of the right foot is measured with a Brannock Device®. The 
+participant stands with the right foot on the device and the left foot on a board of equal 
+height with the weight distributed equally on both feet. The heel of the right foot lightly 
+touches the back of the device, and the medial side of the right foot is parallel with the 
+long axis of the device. A block is placed against the tip of the longest toe to establish 
+the measurement on the scale of the device. 
+
+forearmcenterofgriplength
+(37) FOREARM-CENTER OF GRIP LENGTH 
+The horizontal distance between the olecranon rear landmark and the center of a 
+1-1/4”-diameter dowel gripped in the right hand is measured with a beam caliper. 
+The participant stands erect with the upper arms hanging at the side and the right 
+elbow flexed 90°. The hand grips a 1-1/4”-diameter dowel placed on the fixed 
+blade of a beam caliper. The hand gripping the dowel should be in line with the 
+long axis of the arm. 
+
+forearmcircumferenceflexed
+(38) FOREARM CIRCUMFERENCE, FLEXED 
+The circumference of the flexed right forearm is measured with a tape passing across 
+the crease at the juncture between the upper arm and the forearm. The measurement is 
+taken in a plane perpendicular to the long axis of the forearm. The participant stands 
+with the upper arm extended forward horizontally, the elbow flexed 90°, and the fist 
+tightly clenched with palm facing the head. 
+
+forearmforearmbreadth
+(39) FOREARM-FOREARM BREADTH 
+The maximum horizontal distance across the upper body between the outer sides of the 
+forearms is measured with a beam caliper. The participant sits erect, looking straight 
+ahead.  The shoulders and upper arms are relaxed, and the forearms and hands are 
+extended forward horizontally with the palms facing each other. The measurement is 
+taken at the maximum point of quiet respiration. 
+
+forearmhandlength
+(40) FOREARM-HAND LENGTH 
+The horizontal distance between the olecranon rear landmark and the dactylion III 
+landmark is measured with a beam caliper. The participant stands erect with the upper 
+arms hanging at the sides and the right elbow flexed 90°. The hand is held out straight 
+with the palm facing inward. 
+
+functionalleglength
+(41) FUNCTIONAL LEG LENGTH 
+The straight-line distance between the plane of the bottom of the right foot with the leg 
+extended and the back of the body of a seated participant is measured with an 
+anthropometer passing over the trochanter landmark. The participant sits erect on a 
+stool 45.81 cm high. The right leg is extended, and the foot is on the base plate of the 
+anthropometer, which rests on the floor. The measurement is taken from the footrest 
+surface of the base plate. 
+
+handbreadth
+(42) HAND BREADTH 
+The breadth of the right hand between the landmarks at metacarpale II and metacarpale 
+V is measured with a sliding caliper. The participant places the palm on a table with the 
+fingers together and the thumb abducted. The middle finger is parallel to the long axis of 
+the forearm. The two distal phalanges of the fingers lie on a flat surface 8 mm higher 
+than the table. 
+
+handcircumference
+(43) HAND CIRCUMFERENCE 
+The circumference of the right hand is measured with a tape passing over the 
+landmarks at metacarpale II and metacarpale V. The participant places the palm on a 
+table with the fingers together and the thumb abducted. The middle finger is parallel to 
+the long axis of the forearm. The two distal phalanges of the fingers lie on a flat surface 
+8 mm higher than the table. 
+
+handlength
+(44) HAND LENGTH 
+The length of the right hand between the stylion landmark on the wrist and the tip of the 
+middle finger is measured with a Poech sliding caliper. The participant places the palm 
+on a table with the fingers together and the thumb abducted. The middle finger is 
+parallel to the long axis of the forearm. The two distal phalanges of the fingers lie on a 
+flat surface 8 mm higher than the table. 
+
+headbreadth
+(45) HEAD BREADTH 
+The maximum horizontal breadth of the head above the plane of attachment of the ears 
+is measured with a spreading caliper. For female participants with braids or cornrows, 
+the measurement includes the styled hair.  
+
+headcircumference
+(46) HEAD CIRCUMFERENCE 
+The maximum circumference of the head above the attachment of the ears is measured 
+with a tape passing just above the ridges of the eyebrows and around the back of the 
+head.  For female participants with braids or cornrows, the measurement includes the 
+styled hair.  
+
+headlength
+(47) HEAD LENGTH 
+The distance from the glabella landmark to the opisthocranion landmark is measured 
+with a spreading caliper.  For female participants with braids or cornrows, the 
+measurement includes the styled hair.  
+
+heelanklecircumference
+(48) HEEL-ANKLE CIRCUMFERENCE 
+The circumference of the right foot is measured with a tape passing over the point at 
+which the heel first contacts the table and over the dorsal juncture of the foot and leg 
+landmark at the front of the ankle. The participant stands with the feet about 10 cm 
+apart and the weight distributed equally on both feet. 
+
+heelbreadth
+(49) HEEL BREADTH 
+The maximum horizontal distance between the medial and lateral points of the right 
+heel, at or posterior to the lateral malleolus landmark, is measured with a Holtain 
+caliper. The measurement is taken just above the level of the standing surface at the 
+most protruding points of the curvature of the heel. The participant stands with the feet 
+about 10 cm apart and the weight distributed equally on both feet. 
+
+hipbreadth
+(50) HIP BREADTH 
+The horizontal distance between the lateral buttock landmarks is measured with a beam 
+caliper. The participant stands erect with the heels together and the weight distributed 
+equally on both feet. 
+
+hipbreadthsitting
+(51) HIP BREADTH, SITTING 
+The distance between the lateral points of the hips or thighs (whichever are broader) is 
+measured with a beam caliper. The participant sits erect with the feet and knees 
+together. 
+
+iliocristaleheight
+(52) ILIOCRISTALE HEIGHT 
+The vertical distance between a standing surface and the right iliocristale landmark is 
+measured with an anthropometer. The participant stands erect with the heels together 
+and the weight distributed equally on both feet. The shoulders and upper extremities are 
+relaxed. 
+
+interpupillarybreadth
+(53) INTERPUPILLARY BREADTH 
+The distance between the two pupils is measured with a pupillometer. 
+
+interscyei
+(54) INTERSCYE I 
+The distance across the back between the right and left posterior axillary fold landmarks 
+is measured with a tape. The tape is held on the skin surface except where the tape 
+spans the hollow of the back. The participant stands erect, looking straight ahead. The 
+heels are together with the weight distributed equally on both feet. The shoulders and 
+upper extremities are relaxed. The measurement is taken at the maximum point of quiet 
+respiration. 
+
+interscyeii
+(55) INTERSCYE II 
+The distance across the back between the right and left midscye landmarks is 
+measured with a tape. The tape is held on the skin surface except where it spans the 
+hollow of the back. The participant stands erect, looking straight ahead. The heels are 
+together with the weight distributed equally on both feet. The shoulders and upper 
+extremities are relaxed. The measurement is taken at the maximum point of quiet 
+respiration. 
+
+kneeheightmidpatella
+(56) KNEE HEIGHT, MIDPATELLA 
+The vertical distance between a standing surface and the midpatella landmark is 
+measured with an anthropometer. The participant stands erect with the heels together 
+and the weight distributed equally on both feet. 
+
+kneeheightsitting
+(57) KNEE HEIGHT, SITTING 
+The vertical distance between a footrest surface and the suprapatella landmark is 
+measured with an anthropometer. The participant sits with the thighs parallel, the knees 
+flexed 90°, and the feet in line with the thighs. 
+
+lateralfemoralepicondyleheight
+(58) LATERAL FEMORAL EPICONDYLE HEIGHT 
+The vertical distance between a standing surface and the standing lateral femoral 
+epicondyle landmark is measured with an anthropometer. The participant stands erect 
+with the heels together and the weight distributed equally on both feet. 
+
+lateralmalleolusheight
+(59) LATERAL MALLEOLUS HEIGHT 
+The vertical distance between a standing surface and the lateral malleolus landmark is 
+measured with a modified height gauge. The participant stands erect with the heels 
+together and the weight distributed equally on both feet. 
+
+lowerthighcircumference
+(60) LOWER THIGH CIRCUMFERENCE 
+The horizontal circumference of the right thigh at the level of the suprapatella landmark 
+is measured with a tape. The participant stands erect with the feet about 10 cm apart 
+and the weight distributed equally on both feet. 
+
+mentonsellionlength
+(61) MENTON-SELLION LENGTH 
+The distance between the menton landmark and the sellion landmark is measured with 
+a sliding caliper. The teeth are lightly occluded. 
+
+neckcircumference
+(62) NECK CIRCUMFERENCE 
+The circumference of the neck at the level of the infrathyroid landmark (Adam's apple) is 
+measured with a tape. The plane of the measurement is perpendicular to the long axis 
+of the neck. The participant stands erect with the head in the Frankfurt plane. The 
+shoulders and upper extremities are relaxed. 
+
+neckcircumferencebase
+(63) NECK CIRCUMFERENCE, BASE 
+The circumference of the base of the neck is measured with a tape, passing over the 
+drawn lateral and anterior neck landmarks. The participant stands erect with the head in 
+the Frankfurt plane. The shoulders and upper extremities are relaxed. 
+
+overheadfingertipreachsitting
+(64) OVERHEAD FINGERTIP REACH, SITTING 
+The vertical distance between a sitting surface and the dactylion III landmark of a 
+seated participant whose arm is extended overhead is measured with an 
+anthropometer. The participant sits erect on a flat surface 45.8 cm high with the right 
+arm and hand extended vertically overhead as far as possible and the palm of the hand 
+facing forward. The measurement is taken at the maximum point of quiet respiration. 
+
+palmlength
+(65) PALM LENGTH 
+The distance between the center of the crease at the base of the middle finger 
+(digit III, base) and the ventral stylion landmark is measured with a Poech sliding 
+caliper.  The participant holds the right forearm horizontal with the hand straight, 
+palm up. The fingers are together, and the thumb is abducted approximately 45°.  
+The middle finger is parallel to the long axis of the forearm. 
+
+poplitealheight
+(66) POPLITEAL HEIGHT 
+The vertical distance from a footrest surface to the back of the right knee (the popliteal 
+fossa at the dorsal juncture of the calf and thigh) is measured with an anthropometer. 
+The participant sits with the thighs parallel, the feet in line with the thighs, and the knees 
+flexed 90°. 
+
+radialestylionlength
+(67) RADIALE-STYLION LENGTH 
+The distance between the radiale landmark and the stylion landmark is measured with a 
+beam caliper held parallel to the long axis of the forearm. The participant stands with 
+the arms relaxed at the sides. The hand and fingers are held straight in line with the 
+long axis of the forearm with the palm facing forward.  
+
+shouldercircumference
+(68) SHOULDER CIRCUMFERENCE* 
+The circumference of the shoulders at the level of the right and left deltoid point 
+landmarks is measured with a tape. The participant stands erect, looking straight 
+ahead. The shoulders and upper extremities are relaxed with the palms facing the 
+thighs. The measurement is taken at the maximum point of quiet respiration. 
+
+shoulderelbowlength
+(69) SHOULDER-ELBOW LENGTH 
+The distance between the right acromion landmark and the olecranon bottom landmark 
+is measured with a beam caliper parallel to the long axis of the upper arm. The 
+participant stands with the right upper arm hanging at the side and the elbow flexed 90°. 
+The hand is straight, and the palm faces inward. 
+
+shoulderlength
+(70) SHOULDER LENGTH 
+The surface distance between the right trapezius landmark and the right acromion 
+landmark is measured with a tape. The participant stands erect, looking straight ahead. 
+The shoulders and upper extremities are relaxed. 
+
+sittingheight
+(71) SITTING HEIGHT 
+The vertical distance between a sitting surface and the top of the head is measured with 
+an anthropometer. The participant sits erect with the head in the Frankfurt plane. The 
+shoulders and upper arms are relaxed, and the forearms and hands are extended 
+forward horizontally with the palms facing each other. The thighs are parallel, and the 
+knees are flexed 90° with the feet in line with the thighs. The measurement is taken at 
+the maximum point of quiet respiration. 
+
+sleevelengthspinewrist
+(72) SLEEVE LENGTH: SPINE-WRIST 
+The horizontal surface distance from the midspine landmark, across the olecranon, 
+center landmark at the tip of the raised right elbow, to the dorsal stylion landmark is 
+measured with a tape. The measurement is taken while the participant holds his/her 
+arms up in a horizontal position parallel to the standing surface and joins them by 
+bringing the fists together at the metacarpophalangeal and proximal interphalangeal 
+knuckles. The forearms and fists are in a straight line. 
+
+sleeveoutseam
+(73) SLEEVE OUTSEAM 
+The straight-line distance between the right acromion landmark and the stylion 
+landmark is measured with a tape. The participant stands erect with both arms straight 
+at the sides with the hands straight and the palms facing forward. 
+
+span
+(74) SPAN 
+The distance between the tips of the middle fingers (dactylion III) of the horizontally 
+outstretched arms is measured on a wall chart. The participant stands erect with the 
+back against a wall-mounted scale and the heels together. Both arms and hands are 
+stretched horizontally along the wall with the tip of the middle finger of one hand just 
+touching a side wall. A block is placed at the tip of the middle finger of the other hand to 
+establish the measurement on the scale. The measurement is taken at the maximum 
+point of quiet respiration. 
+
+stature
+(75) STATURE 
+The vertical distance from a standing surface to the top of the head is measured with an 
+anthropometer. The participant stands erect with the head in the Frankfurt plane. The 
+heels are together with the weight distributed equally on both feet. The shoulders and 
+upper extremities are relaxed. The measurement is taken at the maximum point of quiet 
+respiration. 
+
+suprasternaleheight
+(76) SUPRASTERNALE HEIGHT 
+The vertical distance between a standing surface and the suprasternale landmark is 
+measured with an anthropometer. The participant stands erect, looking straight ahead. 
+The heels are together with the weight distributed equally on both feet. The shoulders 
+and upper extremities are relaxed. The measurement is taken at the maximum point of 
+quiet respiration. 
+
+tenthribheight
+(77) TENTH RIB HEIGHT 
+The vertical distance between a standing surface and the tenth rib landmark is 
+measured with an anthropometer. The participant stands erect, looking straight ahead. 
+The heels are together with the weight distributed equally on both feet. The shoulders 
+and upper extremities are relaxed. The measurement is taken at the maximum point of 
+quiet respiration. 
+
+thighcircumference
+(78) THIGH CIRCUMFERENCE 
+The circumference of the right thigh at the gluteal furrow landmark is measured with a 
+tape. The measurement is taken perpendicular to the long axis of the thigh. The 
+participant stands erect with the weight distributed equally on both feet. The legs are 
+spread apart just enough so that the thighs do not touch. 
+
+thighclearance
+(79) THIGH CLEARANCE 
+The vertical distance between a sitting surface and the thigh point, top landmark is 
+measured with an anthropometer. The participant sits with the thighs parallel, knees 
+flexed 90°, and the feet in line with the thighs. 
+
+thumbtipreach
+(80) THUMBTIP REACH 
+The horizontal distance from a back wall to the tip of the right thumb is measured on a 
+wall scale. The participant stands erect in a corner, looking straight ahead with the feet 
+together and the heels 20 cm from the back wall. The buttocks and shoulders are 
+against the wall. The right arm and hand, palm down, are stretched forward horizontally 
+along a scale on the side wall. The thumb continues the horizontal line of the arm, and 
+the remaining fingers curve around to form a fist. The participant's right shoulder is held 
+against the rear wall (not shown in the photo in order to show participant position). 
+  
+
+tibialheight
+(81) TIBIAL HEIGHT 
+The vertical distance between a standing surface and the tibiale landmark is 
+measured with an anthropometer. The participant stands erect on a table with the 
+feet together and the weight distributed equally on both feet. 
+
+tragiontopofhead
+(82) TRAGION - TOP OF HEAD 
+The vertical distance between the right tragion landmark and the horizontal plane 
+tangent to the top of the head is measured with a beam caliper with a paddle blade. 
+The participant sits with the head in the Frankfurt plane.  For female participants with 
+braids or cornrows, the measurement includes the styled hair.  
+   
+
+trochanterionheight
+(83) TROCHANTERION HEIGHT 
+The vertical distance between a standing surface and the trochanterion landmark is 
+measured with an anthropometer. The participant stands erect, looking straight ahead. 
+The heels are together with the weight distributed equally on both feet. 
+
+verticaltrunkcircumferenceusa
+(84) VERTICAL TRUNK CIRCUMFERENCE (USA) 
+The vertical circumference of the torso is measured with a tape passing over the buttock 
+point posterior landmark, to the right of the genitalia, midway between the sternum 
+and the anterior axillary fold, and across the midshoulder landmark.  The participant 
+stands erect, looking straight ahead with the right arm hanging relaxed at the side. The 
+heels are together with the weight distributed equally on both feet. The measurement is 
+taken at the maximum point of quiet respiration. 
+
+waistbacklengthomphalion
+(85) WAIST BACK LENGTH (OMPHALION)* 
+The surface distance between the cervicale landmark and the posterior omphalion 
+landmark is measured with a tape. The participant stands erect with the head in the 
+Frankfurt plane. The shoulders and upper extremities are relaxed. The measurement is 
+taken at the maximum point of quiet respiration. 
+
+waistbreadth
+(86) WAIST BREADTH 
+The horizontal breadth of the waist at the level of omphalion is measured with a beam 
+caliper. The participant stands erect, looking straight ahead. The heels are together with 
+the weight distributed equally on both feet. The measurement is taken at the maximum 
+point of quiet respiration. 
+
+waistcircumferenceomphalion
+(87) WAIST CIRCUMFERENCE (OMPHALION) 
+The horizontal circumference of the waist, passing over all omphalion landmarks, is 
+measured with a tape. The participant stands erect, looking straight ahead. The heels 
+are together with the weight distributed equally on both feet. The measurement is taken 
+at the maximum point of quiet respiration. 
+
+waistdepth
+(88) WAIST DEPTH 
+The horizontal distance between the anterior and posterior omphalion landmarks is 
+measured with a beam caliper. The participant stands erect, looking straight ahead. The 
+heels are together with the weight distributed equally on both feet. The measurement is 
+taken at the maximum point of quiet respiration. 
+
+waistfrontlengthsitting
+(89) WAIST FRONT LENGTH, SITTING 
+The surface distance between the suprasternale landmark and the anterior 
+omphalion landmark is measured with a tape.  The participant is in the 
+anthropometric sitting position with the head in the Frankfurt plane and the arms 
+relaxed at the sides. The measurement is taken at the maximum point of quiet 
+respiration. 
+
+waistheightomphalion
+(90) WAIST HEIGHT (OMPHALION) 
+The vertical distance between a standing surface and the anterior omphalion landmark 
+is measured with an anthropometer. The participant stands erect, looking straight 
+ahead. The heels are together with the weight distributed equally on both feet. The 
+shoulders and upper extremities are relaxed. The measurement is taken at the 
+maximum point of quiet respiration. 
+
+weight
+(91) WEIGHT 
+The weight of the participant is taken to the nearest tenth of a kilogram. The participant 
+stands on the platform of a scale with the weight distributed evenly on both feet. 
+
+
+ 
+(92) WRIST CIRCUMFERENCE 
+The circumference of the wrist, perpendicular to the long axis of the forearm, is 
+measured with a tape passing over the stylion landmark. The participant extends the 
+right arm forward with the palm up. 
+
+wristheight
+(93) WRIST HEIGHT 
+The vertical distance between a standing surface and the stylion landmark is measured 
+with an anthropometer. The participant stands erect, looking straight ahead with the 
+heels together and the weight distributed equally on both feet. The shoulders are 
+relaxed, and the arms are extended downwards with the elbow, wrist, and fingers held 
+rigidly straight. The arms lightly touch the sides. The measurement is taken at the 
+maximum point of quiet respiration. 
+
+abdominallink
+(D1) ABDOMINAL LINK 
+The vertical distance between the tenth rib landmark and the iliocristale landmark on the 
+right side is calculated as follows: TENTH RIB HEIGHT minus ILIOCRISTALE HEIGHT. 
+
+acromialheightsitting
+(D2) ACROMIAL HEIGHT, SITTING 
+The vertical distance between a sitting surface and the right acromion landmark is 
+calculated as follows:  SITTING HEIGHT minus (STATURE minus ACROMIAL 
+HEIGHT). 
+
+acromionaxillalength
+(D3) ACROMION-AXILLA LENGTH 
+The vertical distance between the acromion right landmark and the anterior-scye-on-
+the-torso landmark of a participant standing erect with the arms relaxed at the sides is 
+calculated as follows: ACROMIAL HEIGHT minus AXILLA HEIGHT. 
+
+armlength
+(D4) ARM LENGTH 
+The vertical distance between the acromion right landmark and the dactylion III 
+landmark of a participant standing erect with the arms straight at the sides is calculated 
+as follows: ACROMIAL HEIGHT minus WRIST HEIGHT plus HAND LENGTH. 
+
+axillawaistlengthomphalion
+(D5) AXILLA-WAIST LENGTH (OMPHALION) 
+The vertical distance between the anterior-scye-on-the-torso landmark and the anterior 
+omphalion landmark is calculated as follows: AXILLA HEIGHT minus WAIST HEIGHT 
+(OMPHALION). 
+
+calflink
+(D6) CALF LINK 
+The vertical distance between the lateral femoral epicondyle landmark and the lateral 
+malleolus landmark is calculated as follows: LATERAL FEMORAL EPICONDYLE 
+HEIGHT minus LATERAL MALLEOLUS HEIGHT. 
+
+cervicaleheightsitting
+(D7) CERVICALE HEIGHT, SITTING* 
+The vertical distance between a sitting surface and the cervicale landmark is calculated 
+as follows: SITTING HEIGHT minus (STATURE minus CERVICALE HEIGHT). 
+
+chestheightsitting
+(D8) CHEST HEIGHT, SITTING* 
+The vertical distance between a sitting surface and the chest point, anterior landmark is 
+calculated as follows: SITTING HEIGHT minus (STATURE minus CHEST HEIGHT). 
+
+chestwaistdropomphalion
+(D9) CHEST-WAIST DROP (OMPHALION)* 
+The difference between the circumference of the chest and the circumference of the 
+waist at omphalion is calculated as follows: CHEST CIRCUMFERENCE minus WAIST 
+CIRCUMFERENCE (OMPHALION). 
+
+claviclelink
+(D10) CLAVICLE LINK 
+The distance between the midline of the body and the acromion right landmark is 
+calculated as one-half of BIACROMIAL BREADTH. 
+
+crotchlengthanterioromphalion
+(D11) CROTCH LENGTH, ANTERIOR (OMPHALION) 
+The surface distance between the inner thigh landmark and the abdomen at the level of 
+the waist at the navel (omphalion) of a participant standing with one leg on a step is 
+calculated as follows: CROTCH LENGTH (OMPHALION) minus CROTCH LENGTH, 
+POSTERIOR (OMPHALION). 
+
+dactylionheight
+(D12) DACTYLION HEIGHT 
+The vertical distance between a standing surface and the dactylion III landmark of a 
+participant standing erect with the arms and hands straight at the sides is calculated as 
+follows: WRIST HEIGHT minus HAND LENGTH. 
+
+dactylionreachfromwall
+(D13) DACTYLION REACH FROM WALL 
+The horizontal distance between the plane of the back and the dactylion III landmark of 
+a participant standing erect with the back against a wall and the arm, hand, and fingers 
+extended forward horizontally is calculated as follows: THUMBTIP REACH plus 
+(ANSUR mean of HAND LENGTH minus ANSUR mean of WRIST-THUMBTIP 
+LENGTH). 
+
+elbowrestheightstanding
+(D14) ELBOW REST HEIGHT, STANDING 
+The vertical distance between a standing surface and the olecranon bottom landmark of 
+a participant standing erect with the forearm and hand held horizontally is calculated as 
+follows: ELBOW REST HEIGHT plus STATURE minus SITTING HEIGHT. 
+
+elbowwristlength
+(D15) ELBOW-WRIST LENGTH 
+The horizontal distance between the olecranon rear landmark and the stylion landmark 
+of a participant standing with the forearm and hand held horizontally is calculated as 
+follows: FOREARM-HAND LENGTH minus HAND LENGTH. 
+
+eyeheight
+(D16) EYE HEIGHT 
+The vertical distance between a standing surface and the ectocanthus landmark of a 
+participant standing erect with the head in the Frankfurt plane is calculated as follows: 
+EYE HEIGHT SITTING plus STATURE minus SITTING HEIGHT. 
+
+functionalgripreach
+(D17) FUNCTIONAL GRIP REACH 
+The horizontal distance between the vertical plane of the back and the center of a 1-1/4-
+in diameter dowel gripped in the right hand of a participant standing erect with the back 
+against a wall and the arm and hand extended forward horizontally is calculated as 
+follows: THUMBTIP REACH minus ANSUR mean of WRIST-THUMBTIP LENGTH plus 
+ANSUR mean of WRIST-CENTER OF GRIP LENGTH. 
+
+indexfingerreach
+(D18) INDEX FINGER REACH 
+The horizontal distance between the vertical plane of the back and the tip of the right 
+index finger of a participant standing erect with the back against a wall and the arm, 
+hand, and fingers extended forward horizontally is calculated as follows: THUMBTIP 
+REACH minus ANSUR mean of WRIST-THUMBTIP LENGTH plus ANSUR mean of 
+WRIST-INDEX FINGER LENGTH. 
+
+neckbuttocklength
+(D19) NECK-BUTTOCK LENGTH 
+The vertical distance between the cervicale landmark and the buttock point right 
+landmark is calculated as follows: CERVICALE HEIGHT minus BUTTOCK HEIGHT. 
+
+necklink
+(D20) NECK LINK 
+The vertical distance between the cervicale landmark and the tragion landmark is 
+calculated as follows: STATURE minus TRAGION-TOP OF HEAD minus CERVICALE 
+HEIGHT. 
+
+neckscyelength
+(D21) NECK-SCYE LENGTH 
+The vertical distance between the cervicale landmark and the anterior scye landmark is 
+calculated as follows: CERVICALE HEIGHT minus AXILLA HEIGHT. 
+
+pelviclink
+(D22) PELVIC LINK 
+The vertical distance between the iliocristale right landmark and the level of the 
+trochanterion landmark is calculated as follows: ILIOCRISTALE HEIGHT minus 
+TROCHANTERION HEIGHT. 
+
+riseomphalion
+(D23) RISE (OMPHALION) 
+The vertical distance between the level of the waist at the navel (omphalion) and the 
+crotch of a participant standing erect is calculated as follows: WAIST HEIGHT 
+(OMPHALION) minus CROTCH HEIGHT. 
+
+shoulderwaistlengthomphalion
+(D24) SHOULDER-WAIST LENGTH (OMPHALION) 
+The vertical distance between the acromion right landmark and the level of the waist at 
+the navel (omphalion) of a participant standing erect is calculated as follows: 
+ACROMIAL HEIGHT minus WAIST HEIGHT (OMPHALION). 
+
+sleeveinseam
+(D25) SLEEVE INSEAM 
+The vertical distance between the anterior-scye-on-the-torso landmark and the stylion 
+landmark of a participant standing erect with the arms straight at the sides is calculated 
+as follows: AXILLA HEIGHT minus WRIST HEIGHT. 
+
+suprasternaleheightsitting
+(D26) SUPRASTERNALE HEIGHT, SITTING 
+The vertical distance between a sitting surface and the suprasternale landmark of a 
+participant sitting erect is calculated as follows: SUPRASTERNALE HEIGHT minus 
+(STATURE minus SITTING HEIGHT). 
+
+suprasternaletenthriblength
+(D27) SUPRASTERNALE-TENTH RIB LENGTH 
+The vertical distance between the suprasternale landmark and the tenth rib landmark is 
+calculated as follows: SUPRASTERNALE HEIGHT minus TENTH RIB HEIGHT. 
+
+suprasternalewaistlengthomphalion
+(D28) SUPRASTERNALE-WAIST LENGTH (OMPHALION) 
+The vertical distance between the suprasternale landmark and the waist (omphalion) 
+landmark is calculated as follows: SUPRASTERNALE HEIGHT minus WAIST HEIGHT 
+(OMPHALION). 
+
+thighlink
+(D29) THIGH LINK 
+The vertical distance between the trochanterion landmark and the lateral femoral 
+epicondyle landmark is calculated as follows: TROCHANTERION HEIGHT minus 
+LATERAL FEMORAL EPICONDYLE HEIGHT. 
+
+thoraxlink
+(D30) THORAX LINK 
+The vertical distance between the cervicale landmark and tenth rib landmark is 
+calculated as follows: CERVICALE HEIGHT minus TENTH RIB HEIGHT. 
+
+tragionheight
+(D31) TRAGION HEIGHT 
+The vertical distance between a standing surface and the tragion landmark of a 
+participant standing erect with the head in the Frankfurt plane is calculated as follows: 
+STATURE minus TRAGION-TOP OF HEAD. 
+
+tragionheightsitting
+(D32) TRAGION HEIGHT, SITTING 
+The vertical distance between a sitting surface and the tragion landmark of a participant 
+sitting erect with the head in the Frankfurt plane is calculated as follows: SITTING 
+HEIGHT minus TRAGION-TOP OF HEAD. 
+
+verticalgripreach
+(D33) VERTICAL GRIP REACH 
+The vertical distance between a standing surface and the center of a 1-1/4-in diameter 
+dowel gripped horizontally in the right hand of a participant standing erect with the 
+shoulder, arm, and hand held straight overhead is calculated as follows: OVERHEAD 
+FINGERTIP REACH SITTING plus (STATURE minus SITTING HEIGHT) minus 
+ANSUR mean of HAND LENGTH plus ANSUR mean of WRIST-CENTER OF GRIP 
+LENGTH. 
+
+verticalgripreachdown
+(D34) VERTICAL GRIP REACH DOWN 
+The vertical distance between the acromion right landmark and the center of a 1-1/4-in 
+diameter dowel gripped horizontally in the right hand of a participant standing erect with 
+the arms held straight at the sides is calculated as follows: ACROMIAL HEIGHT minus 
+WRIST HEIGHT plus ANSUR mean of WRIST-CENTER OF GRIP LENGTH. 
+
+verticalgripreachsitting
+(D35) VERTICAL GRIP REACH, SITTING 
+The vertical distance between a sitting surface and the center of a 1-1/4-in diameter 
+dowel gripped horizontally in the right hand of a participant sitting erect with the arm 
+held straight overhead is calculated as follows: OVERHEAD FINGERTIP REACH 
+SITTING minus ANSUR mean of HAND LENGTH plus ANSUR mean of WRIST-
+CENTER OF GRIP LENGTH. 
+
+verticalindexfingertipreach
+(D36) VERTICAL INDEX FINGERTIP REACH 
+The vertical distance between a standing surface and the tip of the right index finger of 
+a participant standing erect with the right shoulder, arm, and fingers stretched straight 
+overhead is calculated as follows: OVERHEAD FINGERTIP REACH SITTING plus 
+(STATURE minus SITTING HEIGHT) minus (ANSUR mean of HAND LENGTH minus 
+ANSUR mean of WRIST-INDEX FINGER LENGTH). 
+
+verticalindexfingertipreachsitting
+(D37) VERTICAL INDEX FINGERTIP REACH, SITTING 
+The vertical distance between a sitting surface and the tip of the right index finger of a 
+participant sitting erect and raising the right shoulder, arm, and fingers straight overhead 
+is calculated as follows: OVERHEAD FINGERTIP REACH SITTING minus ANSUR 
+mean of HAND LENGTH plus ANSUR mean of WRIST-INDEX FINGER LENGTH. 
+
+verticalthumbtipreachsitting
+(D38) VERTICAL THUMBTIP REACH, SITTING 
+The vertical distance between a sitting surface and the tip of the right thumb of a 
+participant sitting erect with the right shoulder, arm, and hand held straight overhead 
+with the thumb lying on the first knuckle of the index finger is calculated as follows: 
+OVERHEAD FINGERTIP REACH SITTING minus ANSUR mean of HAND LENGTH 
+plus ANSUR mean of WRIST-THUMBTIP LENGTH. 
+
+waistbackverticalomphalion
+(D39) WAIST BACK, VERTICAL (OMPHALION)* 
+The vertical distance between the cervicale landmark and the waist at the level of the 
+navel (omphalion) is calculated as follows: CERVICALE HEIGHT minus WAIST 
+HEIGHT (OMPHALION). 
+
+waistbuttockdropomphalion
+(D40) WAIST-BUTTOCK DROP (OMPHALION) 
+The difference between the circumference of the waist at the level of the navel 
+(omphalion) and the circumference at the level of the buttock point landmarks is 
+calculated 
+as 
+follows: 
+BUTTOCK 
+CIRCUMFERENCE 
+minus 
+WAIST 
+CIRCUMFERENCE (OMPHALION). 
+
+waistwaistomphalionovershoulder
+(D41) WAIST-WAIST (OMPHALION) OVER SHOULDER 
+The vertical circumference of the upper torso between the front of the waist at the navel 
+(omphalion) passing up over the midpoint between the sternum and the anterior 
+axillary fold, over the midshoulder landmark, and down the back to the waist 
+(omphalion) posterior landmark is calculated as follows: VERTICAL TRUNK 
+CIRCUMFERENCE (USA) minus CROTCH LENGTH (OMPHALION). 
+

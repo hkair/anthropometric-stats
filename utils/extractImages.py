@@ -32,7 +32,6 @@ def get_pixmaps_in_pdf(pdf_filename, output):
             line_tokenize = page.get_text().split('\n')
             # ' ', '45 ', ' ', '(1) ABDOMINAL EXTENSION DEPTH, SITTING ' - 3rd index
             # ' ', '47 ', ' ', '(2) ACROMIAL HEIGHT ' - 3rd index
-            print(line_tokenize)
             
             if line_tokenize[3] == ' ':
                 name = "".join([ ch for ch in line_tokenize[4][4:].lower() if ch.isalnum()])
