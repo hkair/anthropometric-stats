@@ -398,7 +398,10 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     Input('variable', 'value')
 )
 def update_images(variable):
-    bucket = s3.Bucket(BUCKET_NAME)
+    bucket = s3.Bucket(BUCKET_NAME)\
+    
+    if '_pconstant' in variable:
+        variable = variable.replace('_pconstant','')
     
     object_names = []
     for bucket_object in bucket.objects.all():
@@ -428,6 +431,9 @@ def update_images(variable):
 )
 def update_description(variable):
     description = ""
+    
+    if '_pconstant' in variable:
+        variable = variable.replace('_pconstant','')
     
     # read from description.txt
     myfile = open("./description.txt", encoding='utf8')
