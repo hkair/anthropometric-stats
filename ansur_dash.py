@@ -26,12 +26,8 @@ import seaborn as sns
 pd.set_option('display.max_columns', None)
 
 # AWS S3 Bucket
-s3 = boto3.resource(
-    service_name='s3',
-    region_name='us-east-1',
-    aws_access_key_id='AKIATZJUYHX45RJL45XI',
-    aws_secret_access_key='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'
-)
+session = boto3.Session()
+s3 = session.resource('s3')
 
 BUCKET_NAME = 'aws-s3-anthropometric-stats'
 img_folder = 'body_measurement_images/'
