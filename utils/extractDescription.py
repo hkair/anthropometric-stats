@@ -41,10 +41,11 @@ def getVariableDescription(pdf_filename):
             paragraph_tokenize = page.get_text().split("\n \n")
             sentence = paragraph_tokenize[1]
             title = sentence.split("\n")[0]
-            
+            if title.isspace():
+                title = " ".join(sentence.split())
+              
             name = "".join([ c for c in "".join([ token.lower() for token in title.split(" ") if not any(ch.isdigit() for ch in token)]) if c.isalnum()])
             description = paragraph_tokenize[1] + "\n" + paragraph_tokenize[2]
-            
             descriptions.append(name)
             descriptions.append("\n")
             descriptions.append(description+"\n")

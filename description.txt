@@ -164,8 +164,7 @@ is measured with a tape. The participant stands erect, looking straight ahead. T
 shoulders and upper extremities are relaxed. The measurement is taken at the 
 maximum point of quiet respiration. 
 
-
- 
+chestdepth
 (25) CHEST DEPTH* 
 The horizontal distance between the chest point anterior landmark and the back at the 
 same level is measured with a beam caliper. The participant stands erect, looking 
@@ -649,8 +648,7 @@ weight
 The weight of the participant is taken to the nearest tenth of a kilogram. The participant 
 stands on the platform of a scale with the weight distributed evenly on both feet. 
 
-
- 
+wristcircumference
 (92) WRIST CIRCUMFERENCE 
 The circumference of the wrist, perpendicular to the long axis of the forearm, is 
 measured with a tape passing over the stylion landmark. The participant extends the 

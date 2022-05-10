@@ -9,15 +9,32 @@ from plotly.graph_objects import Layout
 from plotly.validator_cache import ValidatorCache
 from dash_table import DataTable
 
+import boto3 
+import io
+from PIL import Image
+
+import os
 import numpy as np
 import pandas as pd
 import scipy
 
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 import seaborn as sns
 
 # set the max columns to none
 pd.set_option('display.max_columns', None)
+
+# AWS S3 Bucket
+s3 = boto3.resource(
+    service_name='s3',
+    region_name='us-east-1',
+    aws_access_key_id='AKIATZJUYHX45RJL45XI',
+    aws_secret_access_key='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'
+)
+
+BUCKET_NAME = 'aws-s3-anthropometric-stats'
+img_folder = 'body_measurement_images/'
 
 ## PATHS
 ansur_male_path = "./data/ansur/ANSUR II MALE Public.csv"
@@ -146,35 +163,32 @@ for col in df.columns:
     if col in body_measurements:
         df[col+"_pconstant"] = df[col]/df["stature"]
             
-# Summary Stats Functions
+# Helper Functions
 def percentiles_df(df, measure):
     # measure - the measurement or column in the dataframe
     k_percentiles = [1, 2, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 97, 98, 99]
     
     male = df[df['Gender'] == "Male"][measure]
     female = df[df['Gender'] == "Female"][measure]
-
-    print("PERCENTILES - ", measure)
-    print("FEMALES ", "MALES ")
     
     percentile_df = []
     for k in k_percentiles:
         if k == 1:
-            print(female.quantile(k*0.01), " {k}ST ".format(k=k), male.quantile(k*0.01))
+            #print(female.quantile(k*0.01), " {k}ST ".format(k=k), male.quantile(k*0.01))
             d = {
                 'FEMALES': female.quantile(k*0.01),
                 'Percentile':  " {k}ST ".format(k=k),
                 'MALES': male.quantile(k*0.01)
             }
         elif k in [2, 3]:
-            print(female.quantile(k*0.01), " {k}ND ".format(k=k), male.quantile(k*0.01))
+            #print(female.quantile(k*0.01), " {k}ND ".format(k=k), male.quantile(k*0.01))
             d = {
                 'FEMALES': female.quantile(k*0.01),
                 'Percentile':  " {k}ND ".format(k=k),
                 'MALES': male.quantile(k*0.01)
             }
         else:
-            print(female.quantile(k*0.01), " {k}TH ".format(k=k), male.quantile(k*0.01))
+            #print(female.quantile(k*0.01), " {k}TH ".format(k=k), male.quantile(k*0.01))
             d = {
                 'FEMALES': female.quantile(k*0.01),
                 'Percentile':  " {k}TH ".format(k=k),
@@ -203,6 +217,19 @@ def frequency_table(df, measure):
     freq["CumFPct"] = freq['CumF']/n
     
     return freq
+
+def concat_images(imga, imgb):
+    """
+    Combines two color image ndarrays side-by-side.
+    """
+    ha,wa = imga.shape[:2]
+    hb,wb = imgb.shape[:2]
+    max_height = np.max([ha, hb])
+    total_width = wa+wb
+    new_img = np.zeros(shape=(max_height, total_width, 3))
+    new_img[:ha,:wa]=imga
+    new_img[:hb,wa:wa+wb]=imgb
+    return new_img
     
 # APP
 app = Dash(__name__)
@@ -266,6 +293,16 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
             )
         ], style={'width': '25%', 'float': 'right', 'display': 'inline-block'})
     ]),
+    
+    # Images
+    dcc.Graph(id='image'),
+    
+    # Variable Description
+    html.Div(id="description",
+             children='This app allows you to look at the distribution of the variables in the ansur II dataset.', style={
+        'textAlign': 'center',
+        'color': colors['text']
+    }),
     
     # Distribution Graph
     dcc.Graph(id='graph'),
@@ -357,6 +394,63 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     dcc.Graph(id="pie-chart"),
 ])
 
+### CALLBACKS
+
+# Callback for updating images
+@app.callback(
+    Output("image", 'figure'),
+    Input('variable', 'value')
+)
+def update_images(variable):
+    bucket = s3.Bucket(BUCKET_NAME)
+    
+    object_names = []
+    for bucket_object in bucket.objects.all():
+        if variable in bucket_object.key:
+            object_names.append(bucket_object.key)
+    
+    output = None
+    for i, key in enumerate(object_names):
+        obj = bucket.Object(key)
+        response = obj.get()
+        file_stream = response['Body']
+        im = Image.open(file_stream)
+        np_img = np.array(im)
+        if i == 0:
+            output = np_img
+        else:
+            output = concat_images(output, np_img)
+            
+    fig = px.imshow(output)
+    
+    return fig
+
+# Callback for updating variable description
+@app.callback(
+    Output('description', 'children'),
+    Input('variable', 'value')
+)
+def update_description(variable):
+    description = ""
+    
+    # read from description.txt
+    myfile = open("./description.txt", encoding='utf8')
+    while myfile:
+        line  = myfile.readline()
+        if variable in line:
+            print(line)
+            i = 0
+            while line != "\n":
+                line = myfile.readline()
+                description += line
+                if i == 0:
+                    description += ": "
+                description += "\n"
+                i+=1
+            break
+    myfile.close() 
+    return description
+    
 # Callback for updating the graph
 @app.callback(
     Output('graph', 'figure'),
