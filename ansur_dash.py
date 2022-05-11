@@ -47,7 +47,7 @@ df.drop(drop_list_nonnumeric, axis=1, inplace = True)
 NaN_list = []
 for columns in df.columns:
     if df[columns].isnull().sum() > 0:
-        print("{name} = {qty}".format(name = columns, qty = df[columns].isnull().sum()))
+        #print("{name} = {qty}".format(name = columns, qty = df[columns].isnull().sum()))
         NaN_list.append(columns)
         
 df = df.drop(NaN_list, axis=1)
@@ -236,6 +236,12 @@ colors = {
     'text': '#000000'
 }
 
+font_sizes = {
+    "h1": 30,
+    "h2": 20,
+    "h3": 15
+}
+
 app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
     
     # Title
@@ -250,7 +256,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     # Description
     html.Div(children='This app allows you to look at the distribution of the variables in the ansur II dataset.', style={
         'textAlign': 'center',
-        'color': colors['text']
+        'color': colors['text'], 
+        'font-size': font_sizes["h2"]
     }),
     
     html.A("Link to ANSUR II: Methods and Summary Statistics", href='http://tools.openlab.psu.edu/publicData/ANSURII-TR15-007.pdf', target="_blank", 
@@ -297,7 +304,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     html.Div(id="description",
              children='This app allows you to look at the distribution of the variables in the ansur II dataset.', style={
         'textAlign': 'center',
-        'color': colors['text']
+        'color': colors['text'],
+        'font-size': font_sizes["h2"]
     }),
     
     # Distribution Graph
@@ -328,7 +336,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     # Summary Stats
     html.Div(children='Summary Stats', style={
         'textAlign': 'center',
-        'color': colors['text']
+        'color': colors['text'],
+        'font-size': font_sizes["h1"]
     }),
     
     html.Div(id='mean', children='MEAN: ', style={'backgroundColor': "#99E863"}),
@@ -344,7 +353,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     
     html.Div(children='Percentile', style={
         'textAlign': 'center',
-        'color': colors['text']
+        'color': colors['text'],
+        'font-size': font_sizes["h1"]
     }),
     
     DataTable(
@@ -354,7 +364,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     
     html.Div(children='Frequency Table', style={
         'textAlign': 'center',
-        'color': colors['text']
+        'color': colors['text'],
+        'font-size': font_sizes["h1"]
     }),
     
     # Frequency Plot
@@ -366,7 +377,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     # Correlation Matrix
     html.Div(children='Correlation Matrix', style={
         'textAlign': 'center',
-        'color': colors['text']
+        'color': colors['text'],
+        'font-size': font_sizes["h1"]
     }),
     dcc.Graph(id="correlation-graph"),
     html.P("Variables: "),
@@ -379,7 +391,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     # Pie Chart
     html.Div(children='Pie Chart', style={
         'textAlign': 'center',
-        'color': colors['text']
+        'color': colors['text'],
+        'font-size': font_sizes["h1"]
     }),
     dcc.Dropdown(
         ['DODRace', 'Age', 'Branch', 'SubjectsBirthLocation'],
@@ -422,6 +435,13 @@ def update_images(variable):
             output = concat_images(output, np_img)
             
     fig = px.imshow(output)
+    
+    # Color
+    fig.update_layout(
+        plot_bgcolor='#808080',
+        paper_bgcolor='#808080',
+        font_color=colors['text']
+    )
     
     return fig
 
@@ -633,8 +653,16 @@ def filter_heatmap(cols):
     Output("pie-chart", "figure"), 
     Input("names", "value"))
 def generate_chart(names):
-    labels = df[names].value_counts().index
+    # Flip the race_code dictionary key to values and values to keys
+    code_race = { val:key for key, val in race_code.items() }
+    
+    # if variable is DODRace, use the int:race mapping
+    if names == "DODRace":
+        labels = [ code_race[i] for i in df[names].value_counts().index]
+    else:
+        labels = df[names].value_counts().index
     values = df[names].value_counts().values
+    
     fig = go.Figure(data=[go.Pie(labels=labels, values=values, textinfo='label+percent',
                              insidetextorientation='radial'
                             )])
