@@ -373,7 +373,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     dcc.Checklist(
         id='correlation-variables',
         options=df.columns.values,
-        value=df.columns.values,
+        value=["stature", "Weightlbs", "abdominalextensiondepthsitting", "biacromialbreadth", "waistcircumference", "sittingheight"],
     ),
     
     # Pie Chart
@@ -398,8 +398,9 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     Input('variable', 'value')
 )
 def update_images(variable):
-    bucket = s3.Bucket(BUCKET_NAME)\
+    bucket = s3.Bucket(BUCKET_NAME)
     
+    # for proportionality constants
     if '_pconstant' in variable:
         variable = variable.replace('_pconstant','')
     
@@ -432,6 +433,7 @@ def update_images(variable):
 def update_description(variable):
     description = ""
     
+    # for proportionality constants
     if '_pconstant' in variable:
         variable = variable.replace('_pconstant','')
     
@@ -487,7 +489,7 @@ def update_graph(gender, race, height, variable, percentile):
         if race != "All":
             dff = df[(df['Gender'] == gender) & (df['DODRace'] == race_code[race])]
         else:
-            dff = df.copy()
+            dff = df[(df['Gender'] == gender)]
             
         # Height
         if height != "All":
@@ -540,7 +542,8 @@ def update_summary(gender, race, height, variable):
         dff = df[df['DODRace'] == race_code[race]]
     else:
         dff = df.copy()
-        
+    
+    # Gender
     if gender != "Both":
         dff = dff[dff['Gender'] == gender]
 
@@ -550,6 +553,7 @@ def update_summary(gender, race, height, variable):
         h2 = int(height[-2:])
         dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] <= h2)]
     
+    # Measure 
     dff = dff[variable]
     
     return "MEAN: " + str(np.mean(dff)), \
