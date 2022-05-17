@@ -8,6 +8,7 @@ import plotly.graph_objects as go
 from plotly.graph_objects import Layout
 from plotly.validator_cache import ValidatorCache
 from dash_table import DataTable
+import dash_daq as daq
 
 import boto3 
 import io
@@ -21,6 +22,8 @@ import scipy
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import seaborn as sns
+
+from anthropometricProp import BodySkeleton
 
 # set the max columns to none
 pd.set_option('display.max_columns', None)
@@ -59,7 +62,7 @@ races = (["All", "White", "Black", "Hispanic", "Asian", "Native American", "Paci
 
 # Height
 heights = ["All"]
-heights.extend([str(55+i)+"-"+str(55+i+1) for i in range(35)])
+heights.extend([str(150+i) for i in range(50)])
 
 # Body Measurements - For Proportionality Constants
 body_measurements = ['abdominalextensiondepthsitting',
@@ -160,6 +163,29 @@ for col in df.columns:
         df[col+"_pconstant"] = df[col]/df["stature"]
             
 # Helper Functions
+def subsetPopulation(df, gender, race, height, variable):
+    if gender == "Both":
+        if race != "All":
+            dff = df[df['DODRace'] == race_code[race]]
+        else:
+            dff = df.copy()
+    else:
+        if race != "All":
+            dff = df[(df['Gender'] == gender) & (df['DODRace'] == race_code[race])]
+        else:
+            dff = df[df['Gender'] == gender]
+            
+    # Height
+    if height != "All":
+        h1 = int(height[:3])*10 - 5
+        h2 = int(height[:3])*10 + 5
+        dff = dff[(dff["stature"] >= h1) & (dff["stature"] <= h2)]
+        
+    if variable == "All":
+        return dff
+    
+    return dff[variable]
+
 def percentiles_df(df, measure):
     # measure - the measurement or column in the dataframe
     k_percentiles = [1, 2, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 97, 98, 99]
@@ -297,8 +323,30 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
         ], style={'width': '25%', 'float': 'right', 'display': 'inline-block'})
     ]),
     
-    # Images
-    dcc.Graph(id='image'),
+    html.Div([
+        # Images
+        html.Div([
+            html.H3('Measurement Image'),
+            dcc.Graph(id='image'),
+        ], style={'width': '49%', 'display': 'inline-block'}),
+           
+        # Body Proportion 
+        html.Div([
+            html.H3('Anthropometric Proportionality', style = {'margin':'auto','width': "50%"}),
+            html.Div(
+                dcc.Graph(id='body-graph'),
+                style={'margin':'auto','width': "50%"}
+            ),
+            html.Div(
+                dcc.Dropdown(
+                    ["Absolute", "Ratio"],
+                    'Absolute',
+                    id='proportion'
+                ),
+                style={'margin':'auto','width': "50%"}
+            )
+        ], style={'width': '49%', 'display': 'inline-block'}),
+    ], className="row"),
     
     # Variable Description
     html.Div(id="description",
@@ -403,6 +451,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     dcc.Graph(id="pie-chart"),
 ])
 
+
 ### CALLBACKS
 
 # Callback for updating images
@@ -445,6 +494,17 @@ def update_images(variable):
     
     return fig
 
+@app.callback(
+    Output('body-graph', 'figure'),
+    Input('gender', 'value'),
+    Input('race', 'value'),
+    Input('height', 'value'),
+    Input('proportion', 'value')
+)
+def updateBodySkeleton(gender, race, height, proportion):
+    body = BodySkeleton(df, height, gender, race, proportion)
+    return body.getFig()
+
 # Callback for updating variable description
 @app.callback(
     Output('description', 'children'),
@@ -462,7 +522,6 @@ def update_description(variable):
     while myfile:
         line  = myfile.readline()
         if variable in line:
-            print(line)
             i = 0
             while line != "\n":
                 line = myfile.readline()
@@ -486,46 +545,41 @@ def update_description(variable):
 def update_graph(gender, race, height, variable, percentile):
     # Gender
     if gender == "Both":
-        # Race
-        if race != "All":
-            dff = df[df['DODRace'] == race_code[race]]
+        dff = subsetPopulation(df, gender, race, height, "All")
+
+        # Handle if no heights within range for one of the genders
+        if len(dff[dff['Gender'] == "Male"][variable]) > 1 and len(dff[dff['Gender'] == "Female"][variable]) > 1:
+            hist_data = [dff[dff['Gender'] == "Male"][variable], dff[dff['Gender'] == "Female"][variable]]
+            group_labels = ["Male", "Female"]
+            fig = ff.create_distplot(hist_data, group_labels, colors=['blue', 'red'])
+        elif (len(dff[dff['Gender'] == "Male"][variable]) == 0) and len(dff[dff['Gender'] == "Female"][variable]) > 1:
+            hist_data = [dff[dff['Gender'] == "Female"][variable]]
+            group_labels = ["Female"]
+            fig = ff.create_distplot(hist_data, group_labels, colors=['red'])
+        elif (len(dff[dff['Gender'] == "Male"][variable]) > 1) and len(dff[dff['Gender'] == "Female"][variable]) == 0:
+            hist_data = [dff[dff['Gender'] == "Male"][variable]]
+            group_labels = ["Male"]
+            fig = ff.create_distplot(hist_data, group_labels, colors=['blue'])
         else:
-            dff = df.copy()
-        
-        # Height
-        if height != "All":
-            h1 = int(height[:2])
-            h2 = int(height[-2:])
-            dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] <= h2)]
-            
-        hist_data = [dff[dff['Gender'] == "Male"][variable], dff[dff['Gender'] == "Female"][variable]]
-        group_labels = ["Male", "Female"]
-        fig = ff.create_distplot(hist_data, group_labels, colors=['blue', 'red'])
+            fig = go.Figure()
         
         # plot the vertical line
         fig.add_vline(x=dff[variable].quantile(percentile*0.01), line_width=3, line_dash="dash", line_color="green")
         
     else:
-        if race != "All":
-            dff = df[(df['Gender'] == gender) & (df['DODRace'] == race_code[race])]
-        else:
-            dff = df[(df['Gender'] == gender)]
-            
-        # Height
-        if height != "All":
-            h1 = int(height[:2])
-            h2 = int(height[-2:])
-            dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] <= h2)]
-            
-        hist_data = [dff[variable]]
+        dff = subsetPopulation(df, gender, race, height, variable)
+        hist_data = [dff]
         group_labels = [variable]
-        if gender == "Male":
+        
+        if len(dff) <= 1 :
+            fig = go.Figure()
+        elif gender == "Male":
             fig = ff.create_distplot(hist_data, group_labels, colors=["blue"])
         else:
             fig = ff.create_distplot(hist_data, group_labels, colors=["red"])
         
         # plot the vertical line
-        fig.add_vline(x=dff[variable].quantile(percentile*0.01), line_width=3, line_dash="dash", line_color="green")
+        fig.add_vline(x=dff.quantile(percentile*0.01), line_width=3, line_dash="dash", line_color="green")
     
     fig.update_xaxes(title=variable)
     fig.update_yaxes(title="density")
@@ -557,24 +611,7 @@ def update_graph(gender, race, height, variable, percentile):
     Input('variable', 'value'))
 def update_summary(gender, race, height, variable):
         
-    # Race
-    if race != "All":
-        dff = df[df['DODRace'] == race_code[race]]
-    else:
-        dff = df.copy()
-    
-    # Gender
-    if gender != "Both":
-        dff = dff[dff['Gender'] == gender]
-
-    # Height
-    if height != "All":
-        h1 = int(height[:2])
-        h2 = int(height[-2:])
-        dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] <= h2)]
-    
-    # Measure 
-    dff = dff[variable]
+    dff = subsetPopulation(df, gender, race, height, variable)
     
     return "MEAN: " + str(np.mean(dff)), \
            "STD ERROR (MEAN): " + str(scipy.stats.sem(dff)), \
@@ -603,9 +640,9 @@ def updateTable(race, height, variable):
 
     # Height
     if height != "All":
-        h1 = int(height[:2])
-        h2 = int(height[-2:])
-        dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] <= h2)]
+        h1 = int(height[:3])*10 - 5
+        h2 = int(height[:3])*10 + 5
+        dff = dff[(dff["stature"] >= h1) & (dff["stature"] <= h2)]
     
     dff = percentiles_df(dff, variable)
     return dff.to_dict('records'), tuple([ {'id': p, 'name': p} for p in dff.columns])
@@ -626,9 +663,9 @@ def updateFrequency(race, height, variable):
 
     # Height
     if height != "All":
-        h1 = int(height[:2])
-        h2 = int(height[-2:])
-        dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] <= h2)]
+        h1 = int(height[:3])*10 - 50
+        h2 = int(height[:3])*10 + 50
+        dff = dff[(dff["stature"] >= h1) & (dff["stature"] <= h2)]
     
     dff = frequency_table(dff, variable)
     return dff.to_dict('records'), tuple([ {'id': p, 'name': p} for p in dff.columns])
@@ -685,24 +722,9 @@ def generate_chart(names):
                Input('height', 'value'),
                Input('variable', 'value')]) # This is the dropdown for selecting variable
 def update_value_slider(gender, race, height, variable):
-    if gender == "Both":
-        if race != "All":
-            dff = df[df['DODRace'] == race_code[race]]
-        else:
-            dff = df.copy()
-    else:
-        if race != "All":
-            dff = df[(df['Gender'] == gender) & (df['DODRace'] == race_code[race])]
-        else:
-            dff = df[df['Gender'] == gender]
-    
-    # Height
-    if height != "All":
-        h1 = int(height[:2])
-        h2 = int(height[-2:])
-        dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] < h2)] 
+    dff = subsetPopulation(df, gender, race, height, variable)
 
-    return dff[variable].min(), dff[variable].max(), (dff[variable].min() + dff[variable].max())/2
+    return dff.min(), dff.max(), (dff.min() + dff.max())/2
 
 # Callback for updating percentile->value output
 @app.callback(
@@ -714,24 +736,11 @@ def update_value_slider(gender, race, height, variable):
     Input('percentile', 'value')
 )
 def update_percentile_div(gender, race, height, variable, percentile):
-    if gender == "Both":
-        if race != "All":
-            dff = df[df['DODRace'] == race_code[race]]
-        else:
-            dff = df.copy()
-    else:
-        if race != "All":
-            dff = df[(df['Gender'] == gender) & (df['DODRace'] == race_code[race])]
-        else:
-            dff = df[df['Gender'] == gender]
-
-    # Height
-    if height != "All":
-        h1 = int(height[:2])
-        h2 = int(height[-2:])
-        dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] < h2)] 
-        
-    return f'Percentile -> Value: {dff[variable].quantile(percentile*0.01)} (mm (inches) or kg (lbs))'
+    dff = subsetPopulation(df, gender, race, height, variable)
+    
+    if len(dff) > 0:
+        return f'Percentile -> Value: {dff.quantile(percentile*0.01)} (mm (inches) or kg (lbs))'
+    return "Invalid: No population exists in the Dataset"
 
 # Callback for updating value->percentile output
 @app.callback(
@@ -743,24 +752,12 @@ def update_percentile_div(gender, race, height, variable, percentile):
     Input('value_slider', 'value'),
 )
 def update_value_div(gender, race, height, variable, value):
-    if gender == "Both":
-        if race != "All":
-            dff = df[df['DODRace'] == race_code[race]]
-        else:
-            dff = df.copy()
-    else:
-        if race != "All":
-            dff = df[(df['Gender'] == gender) & (df['DODRace'] == race_code[race])]
-        else:
-            dff = df[df['Gender'] == gender]
-            
-    # Height
-    if height != "All":
-        h1 = int(height[:2])
-        h2 = int(height[-2:])
-        dff = dff[(dff["Heightin"] >= h1) & (dff["Heightin"] < h2)] 
-        
-    return f'Value -> Percentile: {round(scipy.stats.percentileofscore(dff[variable], value), 2)}%'
+    dff = subsetPopulation(df, gender, race, height, variable)
+    
+    # Handle cases where subset population doesn't exist
+    if len(dff) > 0:
+        return f'Value -> Percentile: {round(scipy.stats.percentileofscore(dff, value), 2)}%'
+    return "Invalid: No population exists in the Dataset"
     
 if __name__ == '__main__':
     app.run_server(debug=True)
