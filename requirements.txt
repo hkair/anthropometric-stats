@@ -5,7 +5,7 @@ fitz==0.0.1.dev2
 matplotlib==3.5.2
 mediapipe==0.8.10
 numpy==1.22.3
-opencv_python==4.5.5.64
+opencv-python-headless
 pandas==1.4.2
 Pillow==9.1.1
 plotly==5.7.0
