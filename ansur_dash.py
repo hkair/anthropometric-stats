@@ -8,7 +8,6 @@ import plotly.graph_objects as go
 from plotly.graph_objects import Layout
 from plotly.validator_cache import ValidatorCache
 from dash_table import DataTable
-import dash_daq as daq
 
 import boto3 
 import io
@@ -19,14 +18,9 @@ import numpy as np
 import pandas as pd
 import scipy
 
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import seaborn as sns
-
 import cv2 
-from base64 import decodebytes
+#from base64 import decodebytes
 import base64
-import datetime
 
 from anthropometricProp import BodySkeleton
 from poseModule import poseDetector
