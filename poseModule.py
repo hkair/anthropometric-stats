@@ -27,7 +27,7 @@ class poseDetector:
         
         if draw:
             if self.results.pose_landmarks:
-                self.mpDraw.draw_landmarks(img, self.results.pose_landmarks, self.mpPose.POSE_CONNECTIONS)
+                self.mpDraw.draw_landmarks(imgRGB, self.results.pose_landmarks, self.mpPose.POSE_CONNECTIONS)
         return img
         
     def getPosition(self, img, draw=True):
@@ -98,7 +98,6 @@ class poseDetector:
         # get bottom most y-position
         bottom_point = statistics.mean([self.lmList[29][2], self.lmList[30][2], self.lmList[31][2], self.lmList[32][2]])
         height = abs(self.top_head[1] - bottom_point)
-        print(height)
         
         self.proportions = { key: round(val/height, 3) for key, val in self.lengths.items()}
         
@@ -108,7 +107,6 @@ class poseDetector:
                 if key in self.joints:
                     i, j = self.joints[key]
                     midpoint = self.midpoint(self.lmList[i][1:], self.lmList[j][1:])
-                    print(midpoint)
                     cv2.putText(img, str(val), (int(midpoint[0]), int(midpoint[1])), font, 1, (0, 255, 0), 2, cv2.LINE_AA)
         return img
         
