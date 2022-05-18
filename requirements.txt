@@ -6,7 +6,7 @@ gunicorn
 matplotlib==3.5.2
 mediapipe==0.8.10
 numpy==1.22.3
-opencv-python-headless==4.2.0.32
+opencv-python-headless
 pandas==1.4.2
 Pillow==9.1.1
 plotly==5.7.0
