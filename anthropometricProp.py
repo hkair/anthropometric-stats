@@ -238,7 +238,7 @@ class BodySkeleton:
             self.fig.add_trace(go.Scatter(
                 x=[xmean+self.label_padding],
                 y=[ymean],
-                text=[round(float(label), 2) if self.ratio == "Absolute" else round(float(label)/self.height, 2)],
+                text=[round(float(label), 3) if self.ratio == "Absolute" else round(float(label)/self.height, 3)],
                 name=name,
                 mode="text",
             ))
