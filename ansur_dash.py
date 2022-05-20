@@ -18,8 +18,11 @@ import numpy as np
 import pandas as pd
 import scipy
 
+import requests
+import re
+
 #import cv2 
-#import base64
+import base64
 
 from anthropometricProp import BodySkeleton
 #from poseModule import poseDetector
@@ -322,32 +325,32 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
         ], style={'width': '25%', 'float': 'right', 'display': 'inline-block'})
     ]),
     
-    ## Upload Image
-    #dcc.Upload(
-    #    id='upload-image',
-    #    children=html.Div([
-    #        'Drag and Drop or ',
-    #        html.A('Select Files')
-    #    ]),
-    #    style={
-    #        'width': '100%',
-    #        'height': '60px',
-    #        'lineHeight': '60px',
-    #        'borderWidth': '1px',
-    #        'borderStyle': 'dashed',
-    #        'borderRadius': '5px',
-    #        'textAlign': 'center',
-    #        'margin': '10px'
-    #    },
-    #    # Allow multiple files to be uploaded
-    #    multiple=True
-    #),
+    # Upload Image
+    dcc.Upload(
+        id='upload-image',
+        children=html.Div([
+            'Drag and Drop or ',
+            html.A('Select Files')
+        ]),
+        style={
+            'width': '100%',
+            'height': '60px',
+            'lineHeight': '60px',
+            'borderWidth': '1px',
+            'borderStyle': 'dashed',
+            'borderRadius': '5px',
+            'textAlign': 'center',
+            'margin': '10px'
+        },
+        # Allow multiple files to be uploaded
+        multiple=True
+    ),
     
-    #html.Div(
-    #    children=[
-    #        html.Div(id='pose-estimation'),
-    #    ]
-    #),
+    html.Div(
+        children=[
+            html.Div(id='pose-estimation'),
+        ]
+    ),
     
     
     html.Div([
@@ -481,70 +484,80 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 
 ### CALLBACKS
 
-#def parse_contents(contents, filename, date):
+def parse_contents(contents, filename, date):
+    BASE = "http://127.0.0.1:5000/"
 
-#    # Remove 'data:image/png;base64' from the image string,
-#    # see https://stackoverflow.com/a/26079673/11989081
-#    content_type, content_string = contents.split(',')
-#    print(content_type)
-#    img = np.array(Image.open(io.BytesIO(base64.b64decode(content_string))))
+    # Remove 'data:image/png;base64' from the image string,
+    # see https://stackoverflow.com/a/26079673/11989081
 
-#    # Convert the image string to numpy array and create a
+    content_type = 'image/jpeg'
+    headers = {'content-type': content_type}
+    
+    response = requests.put(BASE + "poseprediction", data=contents, headers=headers)
 
-#    # Plotly figure, see https://plotly.com/python/imshow/
-#    detector = poseDetector()
-#    while True:
-#        img = detector.getPose(img)
-#        lmList = detector.getPosition(img)
-#        lengths = detector.getLengths(img)
-#        img = detector.getHeadBox(img, False)
+    base64_string = response.json()["img"]
 
-#        img = detector.getProportions(img)
-#        cv2.imshow('img', img) #display the captured image
-#        #if cv2.waitKey(1) & 0xFF == ord('y'): #save on pressing 'y' 
-#        cv2.destroyAllWindows()
-#        break
+    buff = io.BytesIO(base64.b64decode(re.sub('^data:image/.+;base64,', '', base64_string)))
+    img = np.array(Image.open(buff))
+    # BGR TO RGB
+    imgRGB = img[:,:,::-1]
 
-#    fig = px.imshow(img)
+    # Convert the image string to numpy array and create a
 
-#    # Hide the axes and the tooltips
-#    fig.update_layout(
-#        plot_bgcolor='white',
-#        paper_bgcolor='white',
-#        margin=dict(t=20, b=0, l=0, r=0),
-#        xaxis=dict(
-#            showgrid=False,
-#            showticklabels=False,
-#            linewidth=0
-#        ),
-#        yaxis=dict(
-#            showgrid=False,
-#            showticklabels=False,
-#            linewidth=0
-#        ),
-#        hovermode=False
-#    )
+    ## Plotly figure, see https://plotly.com/python/imshow/
+    #detector = poseDetector()
+    #while True:
+    #    img = detector.getPose(img)
+    #    lmList = detector.getPosition(img)
+    #    lengths = detector.getLengths(img)
+    #    img = detector.getHeadBox(img, False)
 
-#    return html.Div([
-#        html.H5(filename),
-#        dcc.Graph(
-#            figure=fig,
-#            config={'displayModeBar': True} # Always display the modebar
-#        )
-#    ])
+    #    img = detector.getProportions(img)
+    #    cv2.imshow('img', img) #display the captured image
+    #    #if cv2.waitKey(1) & 0xFF == ord('y'): #save on pressing 'y' 
+    #    cv2.destroyAllWindows()
+    #    break
 
-## Callback for inputing image 
-#@app.callback(Output('pose-estimation', 'children'),
-#              Input('upload-image', 'contents'),
-#              State('upload-image', 'filename'),
-#              State('upload-image', 'last_modified'))
-#def update_pose(list_of_contents, list_of_names, list_of_dates):
-#    if list_of_contents is not None:
-#        children = [
-#            parse_contents(c, n, d) for c, n, d in
-#            zip(list_of_contents, list_of_names, list_of_dates)
-#        ]
-#        return children            
+    fig = px.imshow(imgRGB)
+
+    # Hide the axes and the tooltips
+    fig.update_layout(
+        plot_bgcolor='white',
+        paper_bgcolor='white',
+        margin=dict(t=20, b=0, l=0, r=0),
+        xaxis=dict(
+            showgrid=False,
+            showticklabels=False,
+            linewidth=0
+        ),
+        yaxis=dict(
+            showgrid=False,
+            showticklabels=False,
+            linewidth=0
+        ),
+        hovermode=False
+    )
+
+    return html.Div([
+        html.H5(filename),
+        dcc.Graph(
+            figure=fig,
+            config={'displayModeBar': True} # Always display the modebar
+        )
+    ])
+
+# Callback for inputing image 
+@app.callback(Output('pose-estimation', 'children'),
+              Input('upload-image', 'contents'),
+              State('upload-image', 'filename'),
+              State('upload-image', 'last_modified'))
+def update_pose(list_of_contents, list_of_names, list_of_dates):
+    if list_of_contents is not None:
+        children = [
+            parse_contents(c, n, d) for c, n, d in
+            zip(list_of_contents, list_of_names, list_of_dates)
+        ]
+        return children            
 
 # Callback for updating images
 @app.callback(
