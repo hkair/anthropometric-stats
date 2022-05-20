@@ -70,7 +70,12 @@ Go to your local host or visit https://anthropometric-stats-dash.herokuapp.com/!
 Note that some races may not be represented accurately becuase of the low number of participants, for example there are only 188 asians and 49 Native Americans
 in the ANSUR II Dataset, so interpret the data however you will. 
 
-![White](https://i.imgur.com/mqZY3Iv.png) ![Black](https://i.imgur.com/yuxc6ls.png) ![Asian](https://i.imgur.com/l478gzF.png)
+### White 176 cm (average)
+![White](https://i.imgur.com/mqZY3Iv.png)
+### Black 176 cm (average)
+![Black](https://i.imgur.com/yuxc6ls.png)
+### Asian 176 cm (average)
+![Asian](https://i.imgur.com/l478gzF.png)
 
 
 ## Credits
