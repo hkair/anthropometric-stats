@@ -25,7 +25,6 @@ import re
 import base64
 
 from anthropometricProp import BodySkeleton
-#from poseModule import poseDetector
 
 # set the max columns to none
 pd.set_option('display.max_columns', None)
@@ -485,7 +484,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 ### CALLBACKS
 
 def parse_contents(contents, filename, date):
-    BASE = "http://127.0.0.1:5000/"
+    BASE = os.environ.get("BASE_URL")
 
     # Remove 'data:image/png;base64' from the image string,
     # see https://stackoverflow.com/a/26079673/11989081
