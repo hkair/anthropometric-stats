@@ -4,31 +4,26 @@ It's main functionality include the display of the distribution of measurements 
 such as the mean, standard error, standard deviation and more are shown.
 
 ## Motivation
-The problem I wanted to figure out arose from trying to improve my squat and deadlift form. More specifically, how can I increase my depth during the squat? The depth of 
-a squat refers to how low one's hip gets during the squat.
-![Depth](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7cWgc4q7pxg&psig=AOvVaw3yR0vZ1ktnK981Y91V6zLq&ust=1653162714628000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPDRkJXt7vcCFQAAAAAdAAAAABAD)
+The problem I wanted to figure out arose from trying to improve my squat and deadlift form. More specifically, how can I increase my depth during the squat? The depth of a squat refers to how low one's hip gets during the squat.
+![Depth](https://i.ytimg.com/vi/7cWgc4q7pxg/maxresdefault.jpg)
 
-I came across multiple viewpoints on why some people are not able to reach a certain depth no matter how hard they try. It is clear that body proportion is very important
-in the sport of powerlifting. For example people with longer femur/tibia (Thigh/Calf) ratios have a more difficult time reaching depth because of the longer moment arm
-between the hip and the knee as the pivot. The same logic applies to the torso, where people with larger torso has a larger moment arm at the hip!
+I came across multiple viewpoints on why some people are not able to reach a certain depth no matter how hard they try. It is clear that body proportion is very important in the sport of powerlifting. For example people with longer femur/tibia (Thigh/Calf) ratios have a more difficult time reaching depth because of the longer moment arm between the hip and the knee as the pivot. The same logic applies to the torso, where people with larger torso has a larger moment arm at the hip!
 
 So, my next question was to find out the average body measurements of the torso, femur and tibia in the human population. If we were to find these measurements within
 each sub-population, we are able to figure out how each of us place within the population. If you are a male, 176cm tall and a certain race, how well to compare to your "sub-population" in terms of body proportions? 
 
-After browsing the internet, I came across the ANSUR II dataset which contains innumerable number of measurements of the human body. All the way from Abdominal Extension
-Sitting to the bitragion sub-mandibular arc measurement (length afrom eat to eat around the jaw). The measurements were provided by the US Army in 2012, so it comes to no surprise
-of the standardization of each measurements. There were in total 6068 participants, with 4082 males and 1986 females.
+After browsing the internet, I came across the ANSUR II dataset which contains innumerable number of measurements of the human body. All the way from Abdominal Extension Sitting to the bitragion sub-mandibular arc measurement (length afrom eat to eat around the jaw). The measurements were provided by the US Army in 2012, so it comes to no surprise of the standardization of each measurements. There were in total 6068 participants, with 4082 males and 1986 females.
 
 ## Screenshots
 Include logo/demo screenshot etc.
 
-![distribution plot](https://imgur.com/tqsoNQj)
+![distribution plot](https://i.imgur.com/tqsoNQj.png)
 
-![body-skeleton plot](https://imgur.com/sICmsV7)
+![body-skeleton plot](https://i.imgur.com/sICmsV7.png)
 
-![measurement-img](https://imgur.com/dPvbeYE)
+![measurement-img](https://i.imgur.com/dPvbeYE.png)
 
-![pose-estimation and body ratio](https://imgur.com/oLg6vE0)
+![pose-estimation and body ratio](https://i.imgur.com/oLg6vE0.png)
 
 ## Tech/framework used
 
@@ -73,5 +68,4 @@ in the ANSUR II Dataset, so interpret the data however you will.
 Many thanks to the US Army for creating this wonderful dataset and the team at penn state for providing this dataset https://www.openlab.psu.edu/ansur2/.
 
 ## Licence
-
 Licensed under the [MIT LICENSE](LICENSE).
