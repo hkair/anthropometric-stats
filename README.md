@@ -70,6 +70,9 @@ Go to your local host or visit https://anthropometric-stats-dash.herokuapp.com/!
 Note that some races may not be represented accurately becuase of the low number of participants, for example there are only 188 asians and 49 Native Americans
 in the ANSUR II Dataset, so interpret the data however you will. 
 
+![White](https://i.imgur.com/mqZY3Iv.png) ![Black](https://i.imgur.com/yuxc6ls.png) ![Asian](https://i.imgur.com/l478gzF.png)
+
+
 ## Credits
 Many thanks to the US Army for creating this wonderful dataset and the team at penn state for providing this dataset https://www.openlab.psu.edu/ansur2/.
 
