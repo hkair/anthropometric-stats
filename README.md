@@ -16,19 +16,19 @@ After browsing the internet, I came across the ANSUR II dataset which contains i
 
 ## Screenshots
 
-Front Page
+### Front Page
 ![Page](https://i.imgur.com/8fEorTV.png)
 
-Distribution Plot of Abdominal Extension Depth, Sitting
+### Distribution Plot of Abdominal Extension Depth, Sitting
 ![distribution plot](https://i.imgur.com/tqsoNQj.png)
 
-Body Skeleton from Proportion Constants
+### Body Skeleton from Proportion Constants
 ![body-skeleton plot](https://i.imgur.com/sICmsV7.png)
 
-Measurement Image 
+### Measurement Image 
 ![measurement-img](https://i.imgur.com/dPvbeYE.png)
 
-# Lebron James and Pose Estimation
+### Lebron James and Pose Estimation
 ![pose-estimation and body ratio](https://i.imgur.com/oLg6vE0.png)
 
 ## Tech/framework used
