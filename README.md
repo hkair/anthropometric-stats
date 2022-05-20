@@ -66,7 +66,7 @@ python ansur_dash.py
 ```
 
 ## How to use?
-Go to your local host or visit https://anthropometric-stats-dash.herokuapp.com/! And play around! See how you place amongst your sub-population.
+Go to your local host or visit https://anthropometric-stats-dash.herokuapp.com/ and play around! See how you place amongst your sub-population.
 Note that some races may not be represented accurately becuase of the low number of participants, for example there are only 188 asians and 49 Native Americans
 in the ANSUR II Dataset, so interpret the data however you will. 
 
