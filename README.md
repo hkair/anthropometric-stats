@@ -15,14 +15,20 @@ each sub-population, we are able to figure out how each of us place within the p
 After browsing the internet, I came across the ANSUR II dataset which contains innumerable number of measurements of the human body. All the way from Abdominal Extension Sitting to the bitragion sub-mandibular arc measurement (length afrom eat to eat around the jaw). The measurements were provided by the US Army in 2012, so it comes to no surprise of the standardization of each measurements. There were in total 6068 participants, with 4082 males and 1986 females.
 
 ## Screenshots
-Include logo/demo screenshot etc.
 
+Front Page
+![Page](https://i.imgur.com/8fEorTV.png)
+
+Distribution Plot of Abdominal Extension Depth, Sitting
 ![distribution plot](https://i.imgur.com/tqsoNQj.png)
 
+Body Skeleton from Proportion Constants
 ![body-skeleton plot](https://i.imgur.com/sICmsV7.png)
 
+Measurement Image 
 ![measurement-img](https://i.imgur.com/dPvbeYE.png)
 
+# Lebron James and Pose Estimation
 ![pose-estimation and body ratio](https://i.imgur.com/oLg6vE0.png)
 
 ## Tech/framework used
